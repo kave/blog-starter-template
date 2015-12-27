@@ -1,0 +1,5 @@
+name: Blog Starter Template
+highlighter: pygments
+markdown: kramdown
+disqus: # username
+google_analytics: true
