@@ -1,24 +1,45 @@
 <div class="content" id="home">
-  <div id="sidebar-button">
-    <img src="/images/sidebar-button.png">
-  </div>
-  <div id="post-info">
-    <div id="cover-photo-container">
-      <img id="cover-photo" src="/images/{{ page.cover }}">
+    <div id="sidebar-button">
+        <img src="/assets/images/sidebar-button.png">
     </div>
-    <div id="info-container">
-      <h1 id="title">{{ page.title }}</h1>
-      <span id="date">{{ page.date | date_to_string }}</span>
+    <div id="post-info">
+        <div id="cover-photo-container">
+            <img id="cover-photo" src="/assets/images/{{ page.cover }}">
+        </div>
+        <div id="info-container">
+            <h1 id="title">{{ page.title }}</h1>
+            <span id="date">{{ page.date | date_to_string }}</span>
+        </div>
     </div>
-  </div>
 
-  <div class="post">
-    {{ content }}
-  </div>
-  <div class="colophon">
-    <p>
-      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
-      <span id="social">Find me on <a href="">Twitter</a>!</span>
-    </p>
-  </div>
+    <div class="post">
+        {{ content }}
+    </div>
+    <div class="colophon">
+        <p>
+            <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span
+                class="separator">&bull;</span>
+            <a class="twitter"
+               href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
+               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter fa-lg"></i>
+                Twitter
+            </a> |
+            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php"
+               onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook fa-lg"></i>
+                Facebook
+            </a> |
+            <a class="gplus"
+               href="https://plus.google.com/share?url={{ page.url }}"
+               onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <i class="fa fa-google-plus fa-lg"></i>
+                Google+
+            </a>
+        </p>
+    </div>
+
+    {% if site.disqus and page.comments %}
+    {% include disqus.html %}
+    {% endif %}
 </div>

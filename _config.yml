@@ -1,5 +1,18 @@
 name: Blog Starter Template
 highlighter: pygments
 markdown: kramdown
-disqus: # username
-google_analytics: true
+disqus: # disqus-username
+google_analytics_id: '' # XY-99999999-9
+
+description: Jekyll Based Blog Starter Template with Pygments Highlighter
+
+author:
+  name: ''
+  email: ''
+  github: # gitHub-username
+  linkedin: # profile-id
+  email_md5: ''
+
+BASE_PATH:
+
+rss_path: feed.xml
