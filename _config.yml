@@ -1,3 +1,4 @@
+
 name: Blog Starter Template
 highlighter: pygments
 markdown: kramdown
@@ -11,8 +12,8 @@ author:
   email: ''
   github: # gitHub-username
   linkedin: # profile-id
-  email_md5: ''
+  email_md5: '' # used for gravatar sidebar user image
 
 BASE_PATH:
 
-rss_path: feed.xml
+rss_path: rss.xml

@@ -2,11 +2,10 @@
 Jekyll Based Blog Starter Template with Pygments Highlighter 
 
 ## Installation & Usage
-    gem install jekyll
-    gem install pygments.rb
-    bundle install
-    jekyll serve --watch
+    ./install.sh (may need admin privileges)
+    ./runserver.sh
 
+_Note: Visit page at `http://127.0.0.1:4000/`_
 _Note: Requires Ruby version 1.9.3 =>. For example use [rbenv](https://github.com/sstephenson/rbenv)_   
     
 ## Configuration
