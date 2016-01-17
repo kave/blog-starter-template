@@ -11,10 +11,15 @@ set -e
 
 # Build project dependencies.
 build(){
-  echo 'Installing project dependencies...'
+    if hash gem 2>/dev/null; then
+        echo 'Installing project dependencies...'
+        gem install jekyll
+        gem install pygments.rb
+    else
+        echo 'Ruby Gems is not installed...'
+        echo 'Go here to install: https://rubygems.org/pages/download'
+    fi
 
-  gem install jekyll
-  gem install pygments.rb
 }
 
 build
