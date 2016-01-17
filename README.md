@@ -23,13 +23,18 @@ _Note: when editing _config.yml, you need to restart jekyll to see the changes._
     
 ## Publish to User Github Pages
 Ensure you have git installed on commandline
-* Create a repository
-** Log into GitHub and create a new repository named username.github.io, where username is your username (or organization name) on GitHub.
-** `git remote add origin https://github.com/username/username.github.io`
-** `git push origin username.github.io`
+- Create a repository
+  - Log into GitHub and create a new repository named username.github.io, where username is your username (or organization name) on GitHub.
+  - `git remote add origin https://github.com/username/username.github.io`
+  - `git push origin username.github.io`
    
 ##  Blog Content
 Create a file in `_posts` following syntax `YYYY-MM-DD-title.md`
+
+## Recommended Accounts
+- [Gravatar](https://en.gravatar.com/) 
+- [Disqus](https://disqus.com/profile/login/)
+- [Google Analytics](https://en.gravatar.com/)
 
 ## References
 
